@@ -1,8 +1,6 @@
-# auto-green
+# Auto-green
 
-自动保持 GitHub 提交状态常绿。
-
-> a commit a day keeps your girlfriend away.
+自动保持 GitHub 提交状态常绿
 
 ## 原理
 
@@ -12,12 +10,13 @@
 
 ## 使用
 
-- 点右上角 **Use this template** - **Create a new repository** 创建新仓库，**:warning: 千万不要 Fork，因为 fork 项目的动态并不会让你变绿 :warning:**
-- 修改 [ci.yml 文件的第 7、8 行](https://github.com/justjavac/auto-green/blob/master/.github/workflows/ci.yml#L7-L8) 去掉前面的 `#` 号
-- 修改 [ci.yml 文件的第 23 行](https://github.com/justjavac/auto-green/blob/master/.github/workflows/ci.yml#L23) 为自己的 GitHub 邮箱账号
-- (可选) 你可以通过修改 [ci.yml 文件的第 8 行](https://github.com/justjavac/auto-green/blob/master/.github/workflows/ci.yml#L8)来调整频率
+- 点右上角 **Use this template** - **Create a new repository** 创建新仓库 **（:warning: 千万不要 Fork，因为 fork 项目的动态并不会让你变绿 :warning:）**
+- 修改 ci.yml 文件中的第 23 行邮箱为自己的 GitHub 邮箱账号
+- (可选) 可以通过修改 ci.yml 文件的第 8 行来调整自动提交频率
 
-计划任务语法有 5 个字段，中间用空格分隔，每个字段代表一个时间单位。
+## 频率设置
+
+计划任务语法有 5 个字段，中间用空格分隔，每个字段代表一个时间单位
 
 ```plain
 ┌───────────── 分钟 (0 - 59)
@@ -40,8 +39,4 @@
 | `-`   | 范围       | `1-6 * * * *` 每小时的 1-6 分钟               |
 | `/`   | 每         | `*/15 * * * *` 每隔 15 分钟                  |
 
-**注**：由于 GitHub Actions 的限制，如果设置为 `* * * * *` 实际的执行频率为每 5 分执行一次。
-
-## License
-
-[auto-green](https://github.com/justjavac/auto-green) is released under the MIT License. See the bundled [LICENSE](./LICENSE) file for details.
+**注**：由于 GitHub Actions 的限制，如果设置为 `* * * * *` 实际的执行频率为每 5 分执行一次
