@@ -10,7 +10,7 @@
 
 ## 使用
 
-- 点右上角 **Use this template** - **Create a new repository** 创建新仓库 **（ :warning: 千万不要 Fork，因为 fork 项目的动态并不会让你变绿 :warning: ）**
+- 点右上角 **Use this template** - **Create a new repository** 创建新仓库 **（ :warning: 不要 Fork，因为 Fork 项目的动态并不会让你变绿 :warning: ）**
 - 修改 ci.yml 文件中的第 23 行邮箱为自己的 GitHub 邮箱账号
 - (可选) 可以通过修改 ci.yml 文件的第 8 行来调整自动提交频率
 
